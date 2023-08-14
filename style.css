@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-weight: 700;
+    font-size: 15px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+    font-weight: 400;
+}
+.section-p1{
+    padding: 48px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding:15px 30px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+
+}
+body {
+    width: 100%;
+}
+.navbar-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 25px 80px;
+    background: #E3E6F3;
+    box-shadow:0 5px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+#navbar li{
+    list-style: none;
+    padding:0 20px ;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: orange;
+    
+}
+#navbar li a.active::after,
+#navbar li a.hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    color: orange;
+    bottom: -4px;
+    left: 20px;
+}
+/* hero section */
+#hero{
+    background-image: url(/images/hero-image.jpg);
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#hero-items{
+ text-align: center;
+ padding-top: 180px;
+ padding-left: 200px;
+}
+#hero h4{
+    color:#086178;
+    font-family: cursive;
+}
+#hero h1{
+    color:#086178;
+    font-family: cursive;
+}
+#hero h2{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#hero-items button{
+   
+    padding: 5px 20px;
+    margin: 8px;
+    background-color:black;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+/* fetures section */
+#feture{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feture .fe-box{
+    width:180px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow: 20px 20px 35px rgba(0,0,0,0.03);
+    border: 2px solid #086178;
+    border-radius: 5px;
+    margin: 15px 0;
+    
+}
+#feture .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feture .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.2);
+}
+#feture .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height:1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+/* featured products */
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow:20px 20px 30px rgba(0,0,0,0.02) ;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0,0,0,0.06) ;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro  .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des .star{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 600px;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500px;
+    color: #088178;
+    border: 2px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+/* banner */
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(images/banner1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+
+}
+#banner h2{
+    padding-bottom:110px ;
+    color: #fff;
+    font-size: 30px;
+
+}
+#banner h2 span{
+  color: #321ae9;
+
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eed7d7;
+   
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+   
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+   
+}
+footer .follow{
+    margin-top: 20px;
+
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+
+
+
+/* SHOP  PAGE */
+#page-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(images/banner1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#page-header h2{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-family: cursive;
+    margin-bottom: 40px;
+}
+#pagination {
+    text-align: center;
+}
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
