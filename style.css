@@ -102,6 +102,9 @@ body {
     display: none;
     align-items: center;
 }
+#close{
+    display: none;
+}
 /* hero section */
 #hero{
     background-image: url(./images/hero-image.jpg);
